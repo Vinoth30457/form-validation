@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/developer.png"
+      type="image/x-icon"
+    />
+    <title>Form Validation | HTML, CSS, JavaScript</title>
+
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- normalize css -->
+    <link
+      rel="stylesheet"
+      href="./styles/normalize.css"
+    />
+
+    <!-- custom css -->
+    <link
+      rel="stylesheet"
+      href="./styles/style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Connect with Us</h1>
+      <!-- using form will have browser methods activated -->
+      <form
+        class="form"
+        id="form"
+      >
+        <div class="form-control">
+          <label
+            for="username"
+            class="form-label"
+            >Username</label
+          >
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter Username"
+            class="form-input"
+          />
+          <small class="form-small">Username if Required</small>
+        </div>
+        <div
+          class="form-control"
+          class="form-label"
+        >
+          <label for="email">Email address</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email address"
+            class="form-input"
+          />
+
+          <small class="form-small">Email is Required</small>
+        </div>
+        <div class="form-control">
+          <label
+            for="mobile"
+            class="form-label"
+            >Mobile Number</label
+          >
+          <input
+            type="number"
+            id="mobile"
+            name="mobile"
+            placeholder="Enter Mobile Number"
+            class="form-input"
+          />
+
+          <small class="form-small">Mobile Number is Required</small>
+        </div>
+        <div class="form-control">
+          <label
+            for="password"
+            class="form-label"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+            class="form-input"
+          />
+
+          <small class="form-small">Password Number is Required</small>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
